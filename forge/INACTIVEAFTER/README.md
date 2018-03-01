@@ -1,12 +1,12 @@
-# FindActiveSeries
+# INACTIVEAFTER
 
-> [warpscript find activity active.after]
+> [warpscript find activity quiet.after]
 
-Use a FIND query to retrieve only active series after n days for a given selector
+Use a FIND query to retrieve inactive series after a timestamp for a given selector
 
 ## Getting started / Usage
 
-To get started with FindActiveSeries, the easiest way is to go on Quantum and follow the following instructions.
+To get started with INACTIVEAFTER, the easiest way is to go on Quantum and follow the following instructions.
 
 ```warpscript
 
@@ -16,7 +16,7 @@ To get started with FindActiveSeries, the easiest way is to go on Quantum and fo
 
 ## Features
 
-What's all the bells and whistles the FindActiveSeries can perform?
+What's all the bells and whistles the INACTIVEAFTER can perform?
 
 * What's the main functionality
 * You can also do another thing

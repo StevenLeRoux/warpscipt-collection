@@ -1,6 +1,6 @@
 # INACTIVEBEFORE
 
-> [warpscript find activity active.after]
+> [warpscript find activity quiet.before]
 
 Use a FIND query to retrieve inactive series before a timestamp for a given selector
 
@@ -16,7 +16,7 @@ To get started with INACTIVEBEFORE, the easiest way is to go on Quantum and foll
 
 ## Features
 
-What's all the bells and whistles the FindActiveSeries can perform?
+What's all the bells and whistles the INACTIVEBEFORE can perform?
 
 * What's the main functionality
 * You can also do another thing
