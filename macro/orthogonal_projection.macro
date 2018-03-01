@@ -1,0 +1,22 @@
+// FOR initial value
+0               
+// FOR final value
+$reduced_data SIZE 1 -
+// FOR macro
+<% 
+    'index' STORE
+    
+    // Get the GTS at position 'index' in 'item' var
+    $reduced_data $index GET 'item' STORE
+    
+    // Get the pivot label
+    $item LABELS 'pivot' GET 'pivot' STORE
+    
+    // Get the value, concat with a 10000 based index and put in 'value' var
+    // The concat part eliminates doublons without altering top score
+    $item VALUES 0 GET 10000 * $index + 'value' STORE
+    
+    // Adding value to  'projected_data' GTS
+    $projected_data $value NaN NaN NaN $pivot ADDVALUE DROP
+%>
+FOR

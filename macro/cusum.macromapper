@@ -1,0 +1,18 @@
+// This is a dead simple macro mapper
+// it a quite non sense since you can achieve the same result with : 
+// [ SWAP mapper.sum max.tick.sliding.window 0 0 ] MAP
+
+
+0 'accum' STORE
+
+<%
+  '_list' STORE       // Begin by storing the list
+  $_list 0 GET        // Get the tick
+  NaN NaN NaN         // Add NaN for positions and elevation
+  $_list 7 GET 0 GET  // Get the value
+  $accum + DUP        // Increment and duplicate the value
+  'accum' STORE       // Store the duplicated accum value
+%>           
+MACROMAPPER
+0 0 0 5 ->LIST MAP
+

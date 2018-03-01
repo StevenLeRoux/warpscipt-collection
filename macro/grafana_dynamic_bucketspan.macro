@@ -1,0 +1,34 @@
+// Note that this method is DEPRECATED. Prefer use new grafana variables instead
+
+<%
+  // less than 1 hour : 1m
+  <% DUP 1000000 / 3600 <= %>
+  <% DROP 60 1000000 * %>
+  // less than 12 hour : 5m
+  <% DUP  1000000 / 43200  <= %>
+  <% DROP 300 1000000 * %>
+  // less than 1 day : 10m
+  <% DUP  1000000 / 86400  <= %>
+  <% DROP 600 1000000 * %>
+  // less than 1month : 1h
+  <% DUP  1000000 / 2592000  <= %>
+  <% DROP 3600 1000000 * %>
+  //less than 1 year : 7d
+  <% DUP  1000000 / 31536000  <= %>
+  <% DROP 604800 1000000 * %>
+  // default 30d
+  <% DROP 2592000 1000000 * %>
+  5
+  SWITCH
+%> 'GETSPAN' STORE
+
+
+60 1000000  * @GETSPAN // 1m -> 1m
+3600 1000000  * @GETSPAN // <= 1h -> 1m
+3601 1000000  * @GETSPAN // <= 12h -> 5m
+86400 1000000  * @GETSPAN // <= 1d -> 10m
+2592000 1000000  * @GETSPAN // <= 1mo -> 1h
+31536000 1000000  * @GETSPAN // <= 1y -> 7d
+31536001 1000000  * @GETSPAN // default -> 30d
+
+

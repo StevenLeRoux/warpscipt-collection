@@ -1,0 +1,15 @@
+{
+  "name": "INACTIVEAFTER",
+  "version": "1.0.0",
+  "description": "Use a FIND query to retrieve inactive series after a timestamp for a given selector",
+  "keywords": [
+    "warpscript",
+    "find",
+    "activity",
+    "quiet.after"
+  ],
+  "main": "index.ws",
+  "spec": "index.spec.ws",
+  "example": "index.example.ws",
+  "license": "MIT"
+}
