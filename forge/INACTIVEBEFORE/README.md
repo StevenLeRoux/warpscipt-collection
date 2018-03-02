@@ -10,6 +10,12 @@ To get started with INACTIVEBEFORE, the easiest way is to go on Quantum and foll
 
 ```warpscript
 
+'INACTIVEBEFORE' FIMPORT // Import the macro from the forge
+
+[ 'YourReadToken' '~.*' { } NOW 3 d - ] @INACTIVEBEFORE
+
+SIZE
+
 ```
 
 **Here you should say what actually happens when you execute the code above.**

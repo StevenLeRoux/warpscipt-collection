@@ -10,6 +10,12 @@ To get started with INACTIVEAFTER, the easiest way is to go on Quantum and follo
 
 ```warpscript
 
+'INACTIVEAFTER' FIMPORT // Import the macro from the forge
+
+[ 'YourReadToken' '~.*' { } NOW 3 d - ] @INACTIVEAFTER
+
+SIZE
+
 ```
 
 **Here you should say what actually happens when you execute the code above.**

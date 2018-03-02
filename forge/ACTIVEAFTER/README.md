@@ -10,6 +10,12 @@ To get started with ACTIVEAFTER, the easiest way is to go on Quantum and follow 
 
 ```warpscript
 
+'ACTIVEAFTER' FIMPORT // Import the macro from the forge
+
+[ 'YourReadToken' '~.*' { } NOW 3 d - ] @ACTIVEAFTER
+
+SIZE
+
 ```
 
 **Here you should say what actually happens when you execute the code above.**

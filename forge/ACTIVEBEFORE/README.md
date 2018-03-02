@@ -10,6 +10,12 @@ To get started with ACTIVEBEFORE, the easiest way is to go on Quantum and follow
 
 ```warpscript
 
+'ACTIVEBEFORE' FIMPORT // Import the macro from the forge
+
+[ 'YourReadToken' '~.*' { } NOW 3 d - ] @ACTIVEBEFORE
+
+SIZE
+
 ```
 
 **Here you should say what actually happens when you execute the code above.**
