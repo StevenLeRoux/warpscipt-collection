@@ -8,11 +8,11 @@ NOW 'now' STORE
 [ SWAP bucketizer.last $now 1 m 0 ] BUCKETIZE
 
 {
-        'forecast' 20 m          // optional, default: 20 m
-        'observation' 10 m       // optional, default: 20 m
-        'tick'                   // optional, default: NOW
-        'limit' 'lt_32000000000' // optional, default: null
-        'bucketspan' 5 m         // optional, default: 5 m
+        'forecast'    20 m             // optional, default: 20 m
+        'observation' 10 m             // optional, default: 20 m
+        'tick'        $now             // optional, default: NOW
+        'limit'       'lt_32000000000' // optional, default: null
+        'bucketspan'  5 m              // optional, default: 5 m
 }
 
 @PREDICTLINEAR
