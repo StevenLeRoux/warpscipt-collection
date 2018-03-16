@@ -1,0 +1,12 @@
+{
+  "name": "DEFAULT",
+  "version": "1.0.0",
+  "description": "Get Key/Value from map, return the key as a variable containing the value or the default value if Key was not in the map.",
+  "keywords": [
+    "default"
+  ],
+  "main": "index.ws",
+  "spec": "index.spec.ws",
+  "example": "index.example.ws",
+  "license": "MIT"
+}

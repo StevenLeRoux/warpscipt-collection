@@ -1,0 +1,15 @@
+{
+  "name": "PREDICTLINEAR",
+  "version": "0.0.1",
+  "description": "Use a linear regression to predict upcoming values",
+  "keywords": [
+    "linear",
+    "regression",
+    "forecast",
+    "prediction"
+  ],
+  "main": "index.ws",
+  "spec": "index.spec.ws",
+  "example": "index.example.ws",
+  "license": "MIT"
+}
