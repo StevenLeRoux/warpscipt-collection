@@ -32,6 +32,6 @@
     '_default' STORE
     '_key' STORE
     '_map' STORE
-    $_map $_key CONTAINSKEY <% true == %> <% $_key GET $_key TOSTRING STORE %> <% $_default %> IFTE
+    $_map $_key CONTAINSKEY <% true == %> <% $_key GET $_key TOSTRING STORE %> <% $_default $_key TOSTRING STORE %> IFTE
 
 %>
