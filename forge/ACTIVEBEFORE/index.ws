@@ -29,7 +29,7 @@
     'token' $rtoken
     'active.before' $ts  
     'labels' $labels
-    'class' '$class'
+    'class' $class
   } FIND
   
 %>

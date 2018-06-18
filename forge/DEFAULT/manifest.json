@@ -1,6 +1,6 @@
 {
   "name": "DEFAULT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get Key/Value from map, return the key as a variable containing the value or the default value if Key was not in the map.",
   "keywords": [
     "default"
